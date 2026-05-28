@@ -11,7 +11,7 @@ Aplicación fullstack con:
 - Token JWT guardado en `sessionStorage`.
 - Página de **bienvenida** protegida: si no hay token en sesión, redirige al login.
 - Botón de cierre de sesión que elimina el token.
-- Estilos aplicados según el estándar visual definido en `DESING.md` (paleta verde/teal, tarjetas con borde redondeado y botones tipo pill).
+- Estilos aplicados según el estándar visual definido en `DESIGN.md` (archivo `DESING.md` en la raíz del repositorio) con paleta verde/teal, tarjetas con borde redondeado y botones tipo pill.
 
 ## Requisitos
 
