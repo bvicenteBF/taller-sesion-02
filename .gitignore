@@ -21,3 +21,6 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+node_modules/
+frontend/node_modules/
+frontend/dist/

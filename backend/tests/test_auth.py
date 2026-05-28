@@ -32,6 +32,18 @@ def test_login_wrong_password():
     assert response.status_code == 401
 
 
+def test_auth_token_cors_preflight():
+    response = client.options(
+        "/auth/token",
+        headers={
+            "Origin": "http://localhost:5173",
+            "Access-Control-Request-Method": "POST",
+        },
+    )
+    assert response.status_code == 200
+    assert response.headers["access-control-allow-origin"] == "http://localhost:5173"
+
+
 def test_login_wrong_username():
     response = client.post(
         "/auth/token",
