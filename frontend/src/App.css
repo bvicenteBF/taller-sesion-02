@@ -1,0 +1,67 @@
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.card {
+  width: 100%;
+  max-width: 440px;
+  display: grid;
+  gap: 16px;
+}
+
+.card-base {
+  background: var(--canvas);
+  border-radius: 12px;
+  border: 1px solid var(--hairline);
+  padding: 32px;
+}
+
+.subtitle {
+  color: var(--slate);
+}
+
+.login-form {
+  display: grid;
+  gap: 10px;
+}
+
+.text-input {
+  height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--hairline-strong);
+  border-radius: 8px;
+  font-size: 16px;
+  color: var(--ink);
+  background: var(--canvas);
+}
+
+.text-input:focus {
+  border: 2px solid var(--brand-green-dark);
+  outline: none;
+}
+
+.button-primary {
+  margin-top: 8px;
+  border: none;
+  border-radius: 9999px;
+  padding: 10px 22px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--on-primary);
+  background: var(--brand-green);
+}
+
+.button-primary:disabled {
+  cursor: not-allowed;
+  background: var(--hairline);
+  color: var(--muted);
+}
+
+.error {
+  color: #b91c1c;
+  margin: 0;
+}

@@ -1,0 +1,55 @@
+:root {
+  --brand-green: #00ed64;
+  --brand-green-dark: #00684a;
+  --brand-teal-deep: #001e2b;
+  --canvas: #ffffff;
+  --surface: #f9fbfa;
+  --hairline: #e8eded;
+  --hairline-strong: #b8c4c2;
+  --ink: #001e2b;
+  --slate: #5d6c74;
+  --on-dark: #ffffff;
+  --on-primary: #001e2b;
+  --muted: #7f8f97;
+  font-family:
+    'Euclid Circular A',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
+  color: var(--ink);
+  background: var(--surface);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(180deg, var(--brand-teal-deep) 0%, var(--surface) 35%);
+}
+
+h1 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -0.5px;
+  color: var(--ink);
+}
+
+label,
+p,
+button,
+input {
+  font: inherit;
+}
